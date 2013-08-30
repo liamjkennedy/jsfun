@@ -1,21 +1,23 @@
 $( document ).ready(function() {
 
 	$( "a" ).click(function() {
-		
-		alert("I'm afraid I can't allow that, Dave");
-		
-		$( "a" ).removeClass( "test" );
-		
+				
 		event.preventDefault();
+		
+		alert("Where do you think you're going?");
+		
+		$( this ).hide( "slow" );
+
 	
 	});
 	
 	$( "button" ).click(function() {
 		
-		alert("AGH! Please .. you're hurting me!");
+		alert("AGH!");
 		
 	});
 	
 	$( "a" ).addClass( "test" );
+	
 	
 });
