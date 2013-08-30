@@ -6,14 +6,23 @@ $( document ).ready(function() {
 		
 		alert("Where do you think you're going?");
 		
-		$( this ).hide( "slow" );
+		$( this ).fadeOut( "slow" );
 
 	
 	});
 	
 	$( "button" ).click(function() {
 		
-		alert("AGH!");
+		$(".ow").fadeIn("fast", function() {
+		
+			
+			$(this).fadeOut("fast");
+		}
+		
+		
+		);
+		
+		
 		
 	});
 	
